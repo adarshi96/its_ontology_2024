@@ -1,0 +1,396 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/adars/ontologies/2024/11/assignment-ontology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/adars/ontologies/2024/11/assignment-ontology">
+    <Prefix name="" IRI="http://www.semanticweb.org/adars/ontologies/2024/11/assignment-ontology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Base"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Circle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Formula"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Height"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Property"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Radius"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rectangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Result"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Shape"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Side"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Square"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Student"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Triangle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#calculatePerimeter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#achievesResult"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#calculates"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasFormula"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProperty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesActivity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Base"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Height"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#Radius"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#SideLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StudentId"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#StudentName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#areaValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#formulaDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#formulaText"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circle01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Circle02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rectangle01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rectangle02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Square01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Square02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Student02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Triangle01"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Triangle02"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TriangleAreaFormula"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Base"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Circle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Height"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Radius"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rectangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Side"/>
+        <Class IRI="#Property"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Square"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Triangle"/>
+        <Class IRI="#Shape"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#calculatePerimeter"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Student"/>
+        <NamedIndividual IRI="#Student01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Shape"/>
+        <NamedIndividual IRI="#Triangle01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Triangle"/>
+        <NamedIndividual IRI="#Triangle01"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Triangle"/>
+        <NamedIndividual IRI="#Triangle02"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calculates"/>
+        <NamedIndividual IRI="#Student01"/>
+        <NamedIndividual IRI="#Triangle01"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#calculates"/>
+        <NamedIndividual IRI="#Student02"/>
+        <NamedIndividual IRI="#Triangle02"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Radius"/>
+        <NamedIndividual IRI="#Circle01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Radius"/>
+        <NamedIndividual IRI="#Circle02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">14</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Base"/>
+        <NamedIndividual IRI="#Rectangle01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Rectangle01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Base"/>
+        <NamedIndividual IRI="#Rectangle02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Rectangle02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Base"/>
+        <NamedIndividual IRI="#Square01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Square01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Base"/>
+        <NamedIndividual IRI="#Square02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">3</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Square02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StudentId"/>
+        <NamedIndividual IRI="#Student01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">56226</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StudentName"/>
+        <NamedIndividual IRI="#Student01"/>
+        <Literal>Adarshi Perera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StudentId"/>
+        <NamedIndividual IRI="#Student02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">45665</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#StudentName"/>
+        <NamedIndividual IRI="#Student02"/>
+        <Literal>Nadeeshani Perera</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Base"/>
+        <NamedIndividual IRI="#Triangle01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">10</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Triangle01"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">6</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Base"/>
+        <NamedIndividual IRI="#Triangle02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">15</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#Height"/>
+        <NamedIndividual IRI="#Triangle02"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#achievesResult"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasFormula"/>
+        <Class IRI="#Shape"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#Shape"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesActivity"/>
+        <Class IRI="#Result"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#achievesResult"/>
+        <Class IRI="#Result"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasFormula"/>
+        <Class IRI="#Formula"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProperty"/>
+        <Class IRI="#Property"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesActivity"/>
+        <Class IRI="#Activity"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Base"/>
+        <Class IRI="#Base"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Height"/>
+        <Class IRI="#Height"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#Radius"/>
+        <Class IRI="#Radius"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#SideLength"/>
+        <Class IRI="#Side"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StudentId"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#StudentName"/>
+        <Class IRI="#Student"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#areaValue"/>
+        <Class IRI="#Shape"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#formulaDescription"/>
+        <Class IRI="#Formula"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#formulaText"/>
+        <Class IRI="#Formula"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#Base"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Height"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#Radius"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#SideLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StudentId"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#StudentName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#areaValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#formulaDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#formulaText"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
